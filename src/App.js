@@ -1,10 +1,11 @@
 import './App.css';
-import Content3 from './components/Api';
+import { ApiPlaces } from './components/ApiPlaces';
+
 
 function App() {
   return (
     <div className="App">
-      <Content3/>
+      <ApiPlaces/>
     </div>
   );
 }
