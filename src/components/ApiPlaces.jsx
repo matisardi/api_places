@@ -7,10 +7,10 @@ export const ApiPlaces = () => {
 
     useEffect(()=>{
         getPlaces();
-    }, []);
+    }, [search]);
 
     async function getPlaces() {
-        // setSearch("lugares de buenos aires");
+        setSearch("lugares de brasil");
         const responsePlaces = await fetch(`https://corsproxy.io/?https://maps.googleapis.com/maps/api/place/textsearch/json?query=${search}&key=${apiKey}`);
         const dataPlaces = await responsePlaces.json();
         console.log(dataPlaces.results);
